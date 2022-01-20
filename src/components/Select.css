@@ -1,0 +1,18 @@
+.selectDiv{
+    display: flex;
+    justify-content: center;
+}
+.selectlistPhone {
+    width: 450px;
+    height: 70px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: rgb(157, 127, 177);
+    border-bottom:1px solid rgb(145, 126, 126);
+    color: blanchedalmond;
+}
+.selectlistPhone option{
+    color: rgb(189, 209, 214);
+    background-color: rgb(72, 89, 95);
+}
