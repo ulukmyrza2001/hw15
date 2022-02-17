@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(./Assets/Animated\ Shape.svg);
+    background: url(./Assets/Colored\ Patterns.svg);
 }
 #root {
 	width: 1000px;
@@ -29,5 +29,28 @@ body{
 	}
 	100% {
 		opacity: 1;
+	}
+}
+.count{
+	color: rgba(216, 191, 216, 0.747);
+	font-weight: bold;
+		animation: badge 300ms ease-out;
+}
+
+@keyframes badge {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(0.9);
+	}
+	30% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(1);
 	}
 }

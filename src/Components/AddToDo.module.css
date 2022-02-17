@@ -31,9 +31,11 @@ body {
 	height: 36px;
 }
 .alert{
+	position: absolute;
+	transform: translateY(20px);
 	width: 645px;
 	animation: ALERT ease-in-out 0.5s;
-	position: absolute;
+
 }
 @keyframes ALERT {
 	0% {
@@ -41,5 +43,18 @@ body {
 	}
 	100% {
 		opacity: 1;
+	}
+}
+.isValid{
+	width: 645px;
+	animation: ALERTNO ease-in-out 2.5s;
+	position: absolute;
+}
+@keyframes ALERTNO {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0	;
 	}
 }
