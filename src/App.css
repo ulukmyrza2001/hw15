@@ -1,4 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Lato&family=Mochiy+Pop+P+One&family=Open+Sans&family=Orbitron&family=Poppins:wght@300;400&family=Rubik:wght@300&display=swap');
-body{
+*{
     font-family: 'Mochiy Pop P One', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./Assets/Animated\ Shape.svg);
+}
+#root {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+.App {
+	width: 800px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.zogo {
+	color: rgb(81, 168, 230);
+	margin-bottom: 20px;
+	animation: zogo ease-in 1s;
+}
+@keyframes zogo {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }

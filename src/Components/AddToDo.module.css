@@ -1,0 +1,45 @@
+body {
+	background-color: rgb(98, 137, 168);
+}
+
+.form {
+	width: 700px;
+	display: grid;
+	grid-template-columns: 3fr 1fr 1fr;
+	grid-column-gap: 5px;
+	animation: BLOCK ease-in 2s;
+	margin-top  : 90px;
+}
+@keyframes BLOCK {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+}
+
+.form.invalid input {
+	background-color: rgba(255, 99, 71, 0.493);
+}
+.btnAdd {
+	height: 36px;
+}
+.alert{
+	width: 645px;
+	animation: ALERT ease-in-out 0.5s;
+	position: absolute;
+}
+@keyframes ALERT {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

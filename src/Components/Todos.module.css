@@ -1,0 +1,79 @@
+.li {
+	width: 900px;
+	display: grid;
+	grid-template-columns: 0.5fr 3fr 1fr;
+	grid-column-gap: 5px;
+	align-items: center;
+	margin-top: 20px;
+	background-color: rgba(36, 29, 27, 0.514);
+	color: rgb(173, 190, 202);
+	font-size: 18px;
+	padding: 8px;
+	border-radius: 5px;
+	animation: YES ease-in-out 0.5s;
+}
+.li.donee {
+	background-color: rgba(13, 65, 99, 0.514);
+}
+
+@keyframes YES {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes DONE {
+	0% {
+		background-color: rgba(36, 29, 27, 0.514);
+	}
+	100% {
+		background-color: rgba(33, 46, 105, 0.514);
+	}
+}
+.check {
+	display: flex;
+	align-self: center;
+}
+.done {
+	text-decoration: line-through 2px rgb(109, 34, 34);
+
+}
+.task,
+.done {
+	overflow: hidden;
+}
+.container .input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.h1 {
+	color: rgb(95, 121, 160);
+	margin-top: 20px;
+}
+.btnEditt {
+	width: 60px;
+	height: 28px;
+	opacity: 1;
+	margin-left: 60px;
+}
+.btnEditt:hover {
+	background-color: rgb(61, 90, 143);
+	color: aliceblue;
+}
+.btnDelete {
+	opacity: 1;
+	width: 160px;
+	height: 28px;
+	background-color: rgba(255, 255, 255, 0.356);
+}
+.btnDelete:hover {
+	background-color: rgb(143, 84, 61);
+	color: aliceblue;
+}
+
