@@ -1,17 +1,20 @@
 import React from 'react'
+import { Component } from 'react/cjs/react.production.min'
 import classes from './Button.module.css'
 
-const Button = (props) => {
-	return (
-		<button
-			className={`${classes.button} ${props.className}`}
-			type={props.type || 'button'}
-			onClick={props.onClick}
-			id={props.id}
-		>
-			{props.children}
-		</button>
-	)
+class Button extends Component{
+	render(){
+		return (
+			<button
+				className={`${classes.button} ${this.props.className}`}
+				type={this.props.type || 'button'}
+				onClick={this.props.onClick}
+				id={this.props.id}
+			>
+				{this.props.children}
+			</button>
+		)
+	}
 }
 
 export default Button

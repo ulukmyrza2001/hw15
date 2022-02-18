@@ -1,17 +1,21 @@
 import React from 'react'
+import { Component } from 'react/cjs/react.production.min'
 import classes from './Input.module.css'
 
-const Input = (props) => {
-	return (
+
+class Input extends Component{
+	render(){
+		return (
 		<input
-			className={`${classes.input} ${props.className}`}
-			type={props.type}
-			placeholder={props.placeholder}
-			value={props.value}
-			onChange={props.onChange}
-            style={props.style}
+			className={`${classes.input} ${this.props.className}`}
+			type={this.props.type}
+			placeholder={this.props.placeholder}
+			value={this.props.value}
+			onChange={this.props.onChange}
+            style={this.props.style}
 		/>
 	)
-}
+	}
+} 
 
 export default Input

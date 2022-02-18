@@ -1,18 +1,22 @@
 import React from 'react'
+import { Component } from 'react/cjs/react.development'
 import classes from './Checkbox.module.css'
-const Checbox = (props) => {
-	return (
+
+class Checkbox extends Component{
+	render(){
+		return (
 		<label className={classes.label}>
 			<input
 				className={classes.input}
-				id={props.id}
-				type={props.type}
-				onChange={props.onChange}
-				checked={props.checked}
+				id={this.props.id}
+				type={this.props.type}
+				onChange={this.props.onChange}
+				checked={this.props.checked}
 			/>
 			<span className={classes.span}></span>
 		</label>
 	)
+	}
 }
 
-export default Checbox
+export default Checkbox
